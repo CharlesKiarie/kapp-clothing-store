@@ -227,7 +227,20 @@ img {
 
 
 /*=============== BUTTON ===============*/
-
+.button__link {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+}
+.button__link i {
+  font-size: 1rem;
+  transition: .3s;
+}
+.button__link:hover i {
+  transform: translate(.25rem);
+}
 
 /*=============== NEW ===============*/
 
