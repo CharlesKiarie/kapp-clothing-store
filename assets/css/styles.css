@@ -318,9 +318,47 @@ img {
   margin-bottom: 2.5rem;
 }
 /*=============== PRODUCTS ===============*/
-
+.products__container {
+  padding-bottom: 5rem;
+}
+.products__card {
+  width: 270px;
+}
+.products__img {
+  margin-bottom: 1rem;
+}
+.products__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: .75rem;
+}
+.products__price {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
 
 /* Swiper class */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: initial;
+  bottom: 0;
+  width: initial;
+  height: initial;
+  font-size: 1.5rem;
+  color: var(--title-color);
+}
+
+.swiper-button-next {
+  right: calc(50% - 2rem);
+}
+
+.swiper-button-prev {
+  left: calc(50% - 2rem);
+}
 
 
 /*=============== BRANDS ===============*/
