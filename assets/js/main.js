@@ -23,7 +23,7 @@ let swiperProducts = new Swiper(".products__container", {
         1024: {
             spaceBetween: 72,
         }
-    }
+    },
 });
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
