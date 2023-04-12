@@ -444,13 +444,41 @@ row-gap: .75rem;
 }
 
 /*=============== SCROLL BAR ===============*/
-
+::-webkit-scrollbar {
+  width: .6rem;
+  border-radius: .5rem;
+  background-color: hsl(220, 8%, 76%);
+}
+::-webkit-scrollbar-thumb {
+  background-color: hsl(220, 8%, 64%);
+  border-radius: .5rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(220, 8%, 54%);
+}
 
 /*=============== SCROLL UP ===============*/
-
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -30%;
+  background-color: var(--container-color);
+  box-shadow: 0 8px 12px hsla(220, 18%, 45% .15);
+  display: inline-flex;
+  padding: .35rem;
+  color: var(--title-color);
+  font-size: 1.1rem;
+  z-index: var(--z-fixed);
+  transition: .3s;
+}
+.scrollup:hover {
+  transform: translateY(-.55rem);
+}
 
 /* Show Scroll Up*/
-
+.show-scroll {
+  bottom: 7.5rem;
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
